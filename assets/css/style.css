@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    margin: 0;
+    background: url(../img/estadioBgImagem2.png) no-repeat;
+}
+
+header{
+     height: 10vh; /*faz com que o header tenha uma altura de 10% da viewport height */
+    display: flex; /*faz com que os elementos filhos se comportem de maneira flexivel dentro da caixa*/
+    justify-content: space-between;
+    max-width: 1200px; /*ele cria um espaço fora definindo a largura maxima de 1200 pixels*/
+    margin: 0 auto; /*faz com que os elementos venham para a esquerda*/
+    align-items: center; /*centraliza os elementos do header verticalmente deixando-os alinados*/
+}
+
+#menu{
+    display: flex; /*faz com que os filhos do elemento pai->menu sejam flexiveis*/
+    flex-wrap: nowrap; /*evita que meus itens do menu quebrem para baixo*/
+    gap: 10px;
+    list-style-type: none;
+}
+
+.logo{
+    width: 50px;
+}
+
+#menu a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 8px 10px;
+    font-size: 1.7rem;
+    font-weight: 300;
+    transition: color 0.6s ease; 
+}
+
+#menu a:hover{
+    color: rgb(155, 150, 150);
+}
+
+#perfil{
+    display: flex; /*faz com que os filhos do elemento pai->perfil sejam flexiveis*/
+    max-width: 1200px;
+    height: 90vh; /*faz com que o container #perfil ocupe 90% da viewport height (Usei aqui para aumentar o tamanho da imagem e ela ainda assim ficar na pagina inicial toda)*/
+    margin: 0 auto;
+    color: #c5c5c5;
+    gap: 400px;
+    align-items: center; /*faz com que os filhos fiquem centralizados*/
+}
+
+#perfil__dados{
+    gap: 100px;
+}
+
+#perfil__dados h1{
+    font-size: 3.5rem;
+    font-weight: 600;
+    padding: 30px 0;
+    line-height: 1.2;
+}
+
+#perfil__dados h2{
+    font-weight: 300;
+}
+
+#perfil__dados p{
+    color: #c5c5c5;
+    font-weight: 300;
+}
